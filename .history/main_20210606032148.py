@@ -579,7 +579,7 @@ class libaaaa:
         
     @app.route("/libb")
     def add_war():
-        return render_template('adduser/addlib_form.html')
+        return render_template('adduser/addwar_form.html')
 class Accounts:
     @app.route("/add_accounts")  
     def addAccounts():

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 57,
+            "activePatchIndex": 60,
             "patches": [
                 {
                     "date": 1622888838086,
@@ -236,6 +236,18 @@
                 {
                     "date": 1622929453416,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,9 @@\n         sql=\"select branch from coursereg;\"\r\n         cur.execute(sql)\r\n         es=cur.fetchall()\r\n         lenes=len(es)\r\n-        return render_template(\"placement/Addcompany.html\",es=lenes,dataes=es)\r\n+        return render_template(\"placement/addcompany.html\",es=lenes,dataes=es)\r\n     @app.route(\"/addnewcmp\",methods=['POST'])\r\n     def adcmp():\r\n         cmpname=request.form['cmpname']\r\n         role=request.form['role']\r\n"
+                },
+                {
+                    "date": 1622929897504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -570,9 +570,17 @@\n         \r\n     @app.route(\"/war\")\r\n     def add_war():\r\n         return render_template('adduser/addwar_form.html')\r\n-\r\n+class libaaaa:\r\n+    @app.route(\"/add_library\")  \r\n+    def addWarden():\r\n+        st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n+        return render_template(st,temp=\"/war\")\r\n+        \r\n+    @app.route(\"/war\")\r\n+    def add_war():\r\n+        return render_template('adduser/addwar_form.html')\r\n class Accounts:\r\n     @app.route(\"/add_accounts\")  \r\n     def addAccounts():\r\n         st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n"
+                },
+                {
+                    "date": 1622929904129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -574,9 +574,9 @@\n class libaaaa:\r\n     @app.route(\"/add_library\")  \r\n     def addWarden():\r\n         st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n-        return render_template(st,temp=\"/war\")\r\n+        return render_template(st,temp=\"/libb\")\r\n         \r\n     @app.route(\"/war\")\r\n     def add_war():\r\n         return render_template('adduser/addwar_form.html')\r\n"
+                },
+                {
+                    "date": 1622929937356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -576,11 +576,11 @@\n     def addWarden():\r\n         st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n         return render_template(st,temp=\"/libb\")\r\n         \r\n-    @app.route(\"/war\")\r\n+    @app.route(\"/libb\")\r\n     def add_war():\r\n-        return render_template('adduser/addwar_form.html')\r\n+        return render_template('adduser/addlib_form.html')\r\n class Accounts:\r\n     @app.route(\"/add_accounts\")  \r\n     def addAccounts():\r\n         st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n"
                 }
             ],
             "date": 1622888838086,

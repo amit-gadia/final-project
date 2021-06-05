@@ -577,9 +577,9 @@ class libaaaa:
         st="maintemp/"+session['userrole']+"_main.html"
         return render_template(st,temp="/libb")
         
-    @app.route("/libb")
+    @app.route("/war")
     def add_war():
-        return render_template('adduser/addlib_form.html')
+        return render_template('adduser/addwar_form.html')
 class Accounts:
     @app.route("/add_accounts")  
     def addAccounts():

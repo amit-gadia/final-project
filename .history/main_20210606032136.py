@@ -575,11 +575,11 @@ class libaaaa:
     @app.route("/add_library")  
     def addWarden():
         st="maintemp/"+session['userrole']+"_main.html"
-        return render_template(st,temp="/libb")
+        return render_template(st,temp="/war")
         
-    @app.route("/libb")
+    @app.route("/war")
     def add_war():
-        return render_template('adduser/addlib_form.html')
+        return render_template('adduser/addwar_form.html')
 class Accounts:
     @app.route("/add_accounts")  
     def addAccounts():
