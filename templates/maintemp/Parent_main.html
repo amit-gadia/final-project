@@ -1,0 +1,84 @@
+
+<html>
+  <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script src="js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- jQuery -->
+      <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+  </script> 
+
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+  </script> 
+
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+  </script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+      <style>
+          .navcolor{
+              background: linear-gradient(90deg, #256BAC 5.13%, #00A9FC 77.11%);
+          }
+          .nav-link{
+              font-size: x-large;
+          }
+      </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navcolor">
+        <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='img/Poornima_University_Logo.gif')}}" class="mainimg" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                </a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="viewatt">Attendance</a>
+                </li> <li class="nav-item">
+                  <a class="nav-link" href="VResult">Result</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Accounts">Accounts</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/notice">Notice</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="/viewbook">View Book</a>
+                  </li>  
+                
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facility</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="view_mess">Hostel</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="eligible_stu"><center>Placement</center></a>
+                </li>
+
+            </ul>
+          <ul class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="{{url_for('static', filename='img/Poornima_UniversityLogo1.png')}}" class="mainim" width="80px">
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+          </ul>
+        </nav> 
+        
+        <marquee>IS-2027-2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur, Rajasthan (India) 303905.</marquee>
+        <iframe  style="width: -webkit-fill-available; height: -webkit-fill-available;" src="{{temp}}">
+        </iframe>
+        <footer class="navcolor" style="width: -webkit-fill-available; height: 10%;"></footer>
+      </div>   
+  </body>
+</html>

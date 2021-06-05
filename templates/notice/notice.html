@@ -1,0 +1,64 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script src="js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- jQuery -->
+      <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+  </script> 
+
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+  </script> 
+
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+  </script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+      <style>
+          .navcolor{
+              background: linear-gradient(90deg, #1575cf 5.13%, #00A9FC 77.11%);
+          }
+          .nav-link{
+              font-size: x-large;
+          }
+          .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #ffffffcf;
+        }
+        .loader img{
+            position: relative;
+            margin-left: 35%;
+            margin-top: 7.5%;
+        }
+		.btncolor{
+
+        }
+
+      </style>
+  </head>
+  <body>      
+<div class="loader" ><img width="350px" height="350px" src="{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}"></div>
+<a class="nav-link" href="/addnotice"><button type="button" style="color:white; margin-top: 10%; margin-left: 10%; background-color: #1575cf" class="btn btn-primary btn-lg">Add Notice</button></a>
+<button type="button" class="btn btn-primary btn-lg" style="color:white;  margin-top: 10%; margin-left: 10%; background-color: #00A9FC">View Notice</button>
+
+<script>
+        window.onload = function() 
+        {
+            //display loader on page load 
+            $('.loader').fadeOut();
+        }
+    
+      $('#video_id').on('loadstart', function (event) {
+        $(this).addClass('loading');
+      });
+    </script>
+    </body>
+    </html>
