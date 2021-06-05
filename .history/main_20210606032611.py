@@ -1076,7 +1076,7 @@ class add_roles:
         elif(role=="Transport"):
             return Transport.add_tra()
         elif(role=="Library"):
-            return libaaaa.add_bil()
+            return libaaaa.add_bil
         elif(role=="Faculty"):
             return Faculty.add_fac()
 

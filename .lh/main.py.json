@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 62,
+            "activePatchIndex": 63,
             "patches": [
                 {
                     "date": 1622888838086,
@@ -256,6 +256,10 @@
                 {
                     "date": 1622929994450,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -572,9 +572,9 @@\n     def add_war():\r\n         return render_template('adduser/addwar_form.html')\r\n class libaaaa:\r\n     @app.route(\"/add_library\")  \r\n-    def addWarden():\r\n+    def addlibrary():\r\n         st=\"maintemp/\"+session['userrole']+\"_main.html\"\r\n         return render_template(st,temp=\"/libb\")\r\n         \r\n     @app.route(\"/libb\")\r\n"
+                },
+                {
+                    "date": 1622930172132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1075,9 +1075,9 @@\n             return Accounts.add_acc()\r\n         elif(role==\"Transport\"):\r\n             return Transport.add_tra()\r\n         elif(role==\"Library\"):\r\n-            return Library.add_lib()\r\n+            return libaaaa.add_bil\r\n         elif(role==\"Faculty\"):\r\n             return Faculty.add_fac()\r\n \r\n class view_notice:\r\n"
                 }
             ],
             "date": 1622888838086,
