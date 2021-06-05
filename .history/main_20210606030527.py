@@ -182,10 +182,11 @@ class adminplacement:
         ten=request.form['ten']
         twl=request.form['twl']
         diploma=request.form['diploma']
+        gap=request.form['gap']
         description=request.form['description']
         stre=str(abc)
-        sql="insert into company(name,es,ten,tw,diploma,descc,role) values(%s,%s,%s,%s,%s,%s,%s);"
-        val=(cmpname,stre,ten,twl,diploma,description,role)
+        sql="insert into company(name,es,ten,tw,diploma,gap,descc,role) values(%s,%s,%s,%s,%s,%s,%s,%s);"
+        val=(cmpname,stre,ten,twl,diploma,gap,description,role)
         cur.execute(sql,val)
         conn.commit()
         return adminplacement.show_Addcompanymain()

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 54,
+            "activePatchIndex": 56,
             "patches": [
                 {
                     "date": 1622888838086,
@@ -224,6 +224,14 @@
                 {
                     "date": 1622928038643,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -619,9 +619,9 @@\n         cur.execute(sql1)\r\n         data=cur.fetchall()\r\n         code=0\r\n         if(len(data)==0):\r\n-            code=10001\r\n+            code=1001\r\n         else:\r\n             code=(data[-1][-1]+1)\r\n         sql=\"insert into library(bname,bauthor,bedition,bpublisher,book_stock,issue,code) values(%s,%s,%s,%s,%s,%s,%s);\"\r\n         val=(bname,bauthor,bedition,bpublisher,stock,issue,code)\r\n"
+                },
+                {
+                    "date": 1622929208799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,8 @@\n         abc=request.form.getlist('eligiblestream')\r\n         ten=request.form['ten']\r\n         twl=request.form['twl']\r\n         diploma=request.form['diploma']\r\n-        gap=request.form['gap']\r\n         description=request.form['description']\r\n         stre=str(abc)\r\n         sql=\"insert into company(name,es,ten,tw,diploma,gap,descc,role) values(%s,%s,%s,%s,%s,%s,%s,%s);\"\r\n         val=(cmpname,stre,ten,twl,diploma,gap,description,role)\r\n"
+                },
+                {
+                    "date": 1622929218761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,10 +183,10 @@\n         twl=request.form['twl']\r\n         diploma=request.form['diploma']\r\n         description=request.form['description']\r\n         stre=str(abc)\r\n-        sql=\"insert into company(name,es,ten,tw,diploma,gap,descc,role) values(%s,%s,%s,%s,%s,%s,%s,%s);\"\r\n-        val=(cmpname,stre,ten,twl,diploma,gap,description,role)\r\n+        sql=\"insert into company(name,es,ten,tw,diploma,descc,role) values(%s,%s,%s,%s,%s,%s,%s);\"\r\n+        val=(cmpname,stre,ten,twl,diploma,description,role)\r\n         cur.execute(sql,val)\r\n         conn.commit()\r\n         return adminplacement.show_Addcompanymain()\r\n \r\n"
                 }
             ],
             "date": 1622888838086,
