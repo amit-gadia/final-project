@@ -1200,7 +1200,7 @@ class addcourse:
 @app.route("/home")
 def home():
     dst="maintemp/"+session['userrole']+"_main.html"
-    return render_template(dst,temp="/ho")
+    return render_template(dst,temp="/coursevie")
         
 @app.route("/ho")
 def hoo():
@@ -1211,7 +1211,7 @@ class main():
         if(len(session['userrole'])==0):
             return render_template('welcomescreen.html')
         else:
-            return home()
+            home()
     @app.route("/login")
     def login():
         return render_template('login.html',error="All Fields are Manodatry")

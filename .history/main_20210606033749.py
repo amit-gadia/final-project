@@ -1200,7 +1200,7 @@ class addcourse:
 @app.route("/home")
 def home():
     dst="maintemp/"+session['userrole']+"_main.html"
-    return render_template(dst,temp="/ho")
+    return render_template(dst,temp="/coursevie")
         
 @app.route("/ho")
 def hoo():
