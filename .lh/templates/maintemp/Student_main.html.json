@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1622923974657,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622931534154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,11 +40,12 @@\n                   <a class=\"nav-link\" href=\"#\">Home\r\n                   </a>\r\n                 </li>\r\n                   <li class=\"nav-item\">\r\n-                    <a class=\"dropdown-item\" href=\"viewatt\">Attendance</a>\r\n-                  </li> <li class=\"nav-item\">\r\n-                    <a class=\"dropdown-item\" href=\"VResult\">Result</a>\r\n+                    <a class=\"nav-link\" href=\"viewatt\">Attendance</a>\r\n+                  </li> \r\n+                  <li class=\"nav-item\">\r\n+                    <a class=\"nav-link\" href=\"VResult\">Result</a>\r\n                   </li>\r\n                 <li class=\"nav-item\">\r\n                     <a class=\"nav-link\" href=\"Accounts\">Accounts</a>\r\n                   </li>\r\n"
                 }
             ],
             "date": 1622923974657,
