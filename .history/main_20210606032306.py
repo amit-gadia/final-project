@@ -573,7 +573,7 @@ class Warden:
         return render_template('adduser/addwar_form.html')
 class libaaaa:
     @app.route("/add_library")  
-    def addlibrary():
+    def addWarden():
         st="maintemp/"+session['userrole']+"_main.html"
         return render_template(st,temp="/libb")
         
