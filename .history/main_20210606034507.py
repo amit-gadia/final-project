@@ -1209,7 +1209,7 @@ def hoo():
 class main():
     @app.route("/")
     def index():
-        if('userrole' not in session):
+        if(userrole not in session)==0):
             return render_template('welcomescreen.html')
         else:
             return home()
