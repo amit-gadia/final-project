@@ -1207,9 +1207,10 @@ def hoo():
     return ""
 
 class main():
-    session['userrole']=gg[0][0]
+
     @app.route("/")
     def index():
+        session['userrole']=gg[0][0]
         if(len(session['userrole'])==0):
             return render_template('welcomescreen.html')
         else:

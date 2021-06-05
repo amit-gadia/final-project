@@ -1207,7 +1207,7 @@ def hoo():
     return ""
 
 class main():
-    session['userrole']=gg[0][0]
+
     @app.route("/")
     def index():
         if(len(session['userrole'])==0):
