@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 56,
+            "activePatchIndex": 57,
             "patches": [
                 {
                     "date": 1622888838086,
@@ -232,6 +232,10 @@
                 {
                     "date": 1622929218761,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,10 +183,10 @@\n         twl=request.form['twl']\r\n         diploma=request.form['diploma']\r\n         description=request.form['description']\r\n         stre=str(abc)\r\n-        sql=\"insert into company(name,es,ten,tw,diploma,gap,descc,role) values(%s,%s,%s,%s,%s,%s,%s,%s);\"\r\n-        val=(cmpname,stre,ten,twl,diploma,gap,description,role)\r\n+        sql=\"insert into company(name,es,ten,tw,diploma,descc,role) values(%s,%s,%s,%s,%s,%s,%s);\"\r\n+        val=(cmpname,stre,ten,twl,diploma,description,role)\r\n         cur.execute(sql,val)\r\n         conn.commit()\r\n         return adminplacement.show_Addcompanymain()\r\n \r\n"
+                },
+                {
+                    "date": 1622929453416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,9 @@\n         sql=\"select branch from coursereg;\"\r\n         cur.execute(sql)\r\n         es=cur.fetchall()\r\n         lenes=len(es)\r\n-        return render_template(\"placement/Addcompany.html\",es=lenes,dataes=es)\r\n+        return render_template(\"placement/addcompany.html\",es=lenes,dataes=es)\r\n     @app.route(\"/addnewcmp\",methods=['POST'])\r\n     def adcmp():\r\n         cmpname=request.form['cmpname']\r\n         role=request.form['role']\r\n"
                 }
             ],
             "date": 1622888838086,
