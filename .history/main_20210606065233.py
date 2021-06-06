@@ -44,7 +44,7 @@ class adminnotice:
         val=(date,title,description,eventtype,timing)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Notice Added Successfully",id=1)
+        return view_notice.show_notice()
 class hostel:
     @app.route("/addhroom")
     def addroom():
@@ -446,7 +446,7 @@ def badd():
     cur.execute(sql,val)
     aa=cur.fetchall()
     if(int(aa[0][5])==int(aa[0][6])):
-        return render_template("tome.html",text="Out Of Stock",id=0)
+        return"Out Of Stock"
     sql="select * from issued_book where issue_book_code=%s;"
     val=(aa[0][-1],)
     cur.execute(sql,val)

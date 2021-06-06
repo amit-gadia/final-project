@@ -44,7 +44,7 @@ class adminnotice:
         val=(date,title,description,eventtype,timing)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Notice Added Successfully",id=1)
+        return view_notice.show_notice()
 class hostel:
     @app.route("/addhroom")
     def addroom():
@@ -61,7 +61,7 @@ class hostel:
         val=(addroom,)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Room Added Successfully",id=1)
+        return hostel.addroomicon()
     
     @app.route("/addhmess")
     def addmess():
@@ -85,7 +85,7 @@ class hostel:
         val=(breakfast,lunch,dinner)   
         cur.execute(sql,val)
         conn.commit()     
-        return render_template("tome.html",text="Mess Menu Added Successfully",id=1)
+        return hostel.addmessicon()
 class adminacc:
     @app.route("/Accounts")
     def acc():
@@ -185,7 +185,7 @@ class adminplacement:
         val=(cmpname,stre,ten,twl,diploma,description,role)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Company Added Successfully",id=1)
+        return adminplacement.show_Addcompanymain()
 
     @app.route("/adddrive")
     def adddrive():
@@ -216,7 +216,7 @@ class adminplacement:
         cur.execute(sql,val)
         conn.commit()
         print(a[0][0],date,time,venue)
-        return render_template("tome.html",text="Drive Added Successfully",id=1)
+        return adminplacement.show_adddrivemain()
 
     @app.route("/eligible_stu")
     def eligible():
@@ -446,7 +446,7 @@ def badd():
     cur.execute(sql,val)
     aa=cur.fetchall()
     if(int(aa[0][5])==int(aa[0][6])):
-        return render_template("tome.html",text="Out Of Stock",id=0)
+        return"Out Of Stock"
     sql="select * from issued_book where issue_book_code=%s;"
     val=(aa[0][-1],)
     cur.execute(sql,val)
@@ -621,7 +621,7 @@ class rms:
             cur.execute(sql,val)
             conn.commit()
         k="Result Added Successfully"
-        return render_template("tome.html",text=k,id=1)
+        return rms.show_rsm(k)
 class vrms:
     @app.route("/VResult")
     def vrsm():
@@ -876,7 +876,7 @@ class Library:
         val=(bauthor,)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Author Added Successfully",id=1)
+        return Library.aauthor()
     @app.route("/addpublisher")  
     def addpublisher():
         st="maintemp/"+session['userrole']+"_main.html"
@@ -896,7 +896,7 @@ class Library:
         val=(bauthor,)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Publisher Added Successfully",id=1)
+        return Library.apublisher()
     @app.route("/stockviewbook")  
     def stockviewLibrary():
         st="maintemp/"+session['userrole']+"_main.html"
@@ -971,7 +971,7 @@ class add_sturoles:
         val=(name,userid,pas,role)
         cur.execute(sql,val)
         conn.commit()
-        return render_template("tome.html",text="Student Role User Added Successfully",id=1)
+        return Student.add_stu()
 
 
 @app.route('/admin_tt',methods=['POST'])
@@ -1364,7 +1364,7 @@ class addcourse:
                 cur.execute(sql,val)
                 conn.commit()
 
-        return render_template("tome.html",text="Course Added Successfully",id=1)
+        return "hello"
     
 @app.route("/home")
 def home():
