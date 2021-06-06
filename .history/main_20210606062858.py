@@ -475,7 +475,7 @@ def badd():
     val=(noo,aa[0][-1],rno,issudate,return_date,aa[0][0])
     cur.execute(sql,val)
     conn.commit()
-    return render_template("tome.html",text="Book Issued Successfully",id=1)
+    return"Book Issue Successfully"
 
 @app.route("/stuissuebook")
 def stuissuebook():

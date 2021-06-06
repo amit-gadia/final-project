@@ -42,39 +42,15 @@
 
       </style>
   </head>
-  <body>      
-    <div class="loader" ><img width="350px" height="350px" src="{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}"></div>
-    <table class="table table-hover">
-        <thead>
-          <tr class="navcolor">
-            <th>Name</th>
-            <th>User Id</th>
-            <th>Password</th>
-            <th>Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          {%for i in range(cblen)%}
-          <tr style="color:white;" class="navcolor">
-            <td>{{cbb[i][1]}}</th>
-            <td>{{cbb[i][2]}}</th>
-            <td>{{cbb[i][3]}}</td>
-            <td>{{cbb[i][4]}}</td>        
-          </tr>
-{%endfor%}
-          
-        </tbody>
-      </table>
-      <script>
-        window.onload = function() 
-        {
-            //display loader on page load 
-            $('.loader').fadeOut();
-        }
-    
-      $('#video_id').on('loadstart', function (event) {
-        $(this).addClass('loading');
-      });
-    </script>
-    </body>
-    </html>
+  <body>  
+{%if id==1%}
+<div class="alert alert-dismissible alert-success">
+   <center> <strong>{{text}}</strong>  </center>
+</div>
+{%else%}
+<div class="alert alert-dismissible alert-danger">
+<center><strong>{{text}}</strong></center>
+</div>
+{%endif%}
+</body>
+</html>

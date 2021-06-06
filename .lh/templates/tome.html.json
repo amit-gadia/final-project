@@ -1,0 +1,34 @@
+{
+    "sourceFile": "templates/tome.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1622941412357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622941474622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n {%if id==1}\r\n <div class=\"alert alert-dismissible alert-success\">\r\n-  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\r\n-  <strong>Well done!</strong> You successfully read <a href=\"#\" class=\"alert-link\">this important alert message</a>.\r\n+    <strong>{{text}}</strong>  \r\n </div>\r\n {%else%}\r\n <div class=\"alert alert-dismissible alert-danger\">\r\n-  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\r\n-  <strong>Oh snap!</strong> <a href=\"#\" class=\"alert-link\">Change a few things up</a> and try submitting again.\r\n+  <strong>{{text}}</strong>\r\n </div>\r\n {%endif%}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1622941636730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{%if id==1}\r\n+{%if id==1%}\r\n <div class=\"alert alert-dismissible alert-success\">\r\n     <strong>{{text}}</strong>  \r\n </div>\r\n {%else%}\r\n"
+                },
+                {
+                    "date": 1622941691853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,56 @@\n+<html>\r\n+  <head>\r\n+  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n+      <link rel=\"stylesheet\" href=\"css/bootstrap.css\">\r\n+      <script src=\"js/script.js\"></script>\r\n+      <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\r\n+      <!-- jQuery -->\r\n+      <link rel=\"stylesheet\" href= \"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"> \r\n+\r\n\\ No newline at end of file\n+  <script src= \"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"> \r\n+  </script> \r\n+\r\n+  <script src= \"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"> \r\n+  </script> \r\n+\r\n+  <script src= \"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"> \r\n+  </script>  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\r\n+      \r\n+      <link href=\"https://fonts.googleapis.com/css2?family=Aladin&display=swap\" rel=\"stylesheet\">\r\n+      <style>\r\n+          .navcolor{\r\n+              background: linear-gradient(90deg, #1575cf 5.13%, #00A9FC 77.11%);\r\n+          }\r\n+          .nav-link{\r\n+              font-size: x-large;\r\n+          }\r\n+          .loader {\r\n+            position: fixed;\r\n+            left: 0px;\r\n+            top: 0px;\r\n+            width: 100%;\r\n+            height: 100%;\r\n+            z-index: 9999;\r\n+            background-color: #ffffffcf;\r\n+        }\r\n+        .loader img{\r\n+            position: relative;\r\n+            margin-left: 35%;\r\n+            margin-top: 7.5%;\r\n+        }\r\n+\t\t\r\n+\r\n+      </style>\r\n+  </head>\r\n+  <body>  \r\n {%if id==1%}\r\n <div class=\"alert alert-dismissible alert-success\">\r\n     <strong>{{text}}</strong>  \r\n </div>\r\n {%else%}\r\n <div class=\"alert alert-dismissible alert-danger\">\r\n   <strong>{{text}}</strong>\r\n </div>\r\n-{%endif%}\n+{%endif%}\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1622941722373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,13 +44,13 @@\n   </head>\r\n   <body>  \r\n {%if id==1%}\r\n <div class=\"alert alert-dismissible alert-success\">\r\n-    <strong>{{text}}</strong>  \r\n+   <center> <strong>{{text}}</strong>  </center>\r\n </div>\r\n {%else%}\r\n <div class=\"alert alert-dismissible alert-danger\">\r\n-  <strong>{{text}}</strong>\r\n+<center><strong>{{text}}</strong></center>\r\n </div>\r\n {%endif%}\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1622941412357,
+            "name": "Commit-0",
+            "content": "{%if id==1}\r\n<div class=\"alert alert-dismissible alert-success\">\r\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\r\n  <strong>Well done!</strong> You successfully read <a href=\"#\" class=\"alert-link\">this important alert message</a>.\r\n</div>\r\n{%else%}\r\n<div class=\"alert alert-dismissible alert-danger\">\r\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\r\n  <strong>Oh snap!</strong> <a href=\"#\" class=\"alert-link\">Change a few things up</a> and try submitting again.\r\n</div>\r\n{%endif%}"
+        }
+    ]
+}

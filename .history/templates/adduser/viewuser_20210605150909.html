@@ -51,6 +51,7 @@
             <th>User Id</th>
             <th>Password</th>
             <th>Role</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -59,7 +60,8 @@
             <td>{{cbb[i][1]}}</th>
             <td>{{cbb[i][2]}}</th>
             <td>{{cbb[i][3]}}</td>
-            <td>{{cbb[i][4]}}</td>        
+            <td>{{cbb[i][4]}}</td>
+            <td><a style="color:white;" href={{cbb[i][4]}}>Delete</a></td>            
           </tr>
 {%endfor%}
           
