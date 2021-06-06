@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1622939010658,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622944346682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.gif')}}\"></a>\r\n+<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.gif')}}\"></a>\r\n </div>\r\n \r\n     <table class=\"table table-hover\">\r\n         <thead>\r\n"
                 }
             ],
             "date": 1622939010658,

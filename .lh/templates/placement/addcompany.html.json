@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1622929198259,
@@ -12,6 +12,10 @@
                 {
                     "date": 1622929292581,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,13 +104,8 @@\n               <td>\r\n                 <input type=\"text\" name=\"diploma\">\r\n               </td>\r\n             </tr>\r\n-            <tr>\r\n-              <td>\r\n-              Gap \r\n-              </td>\r\n-            </tr>\r\n           </table>\r\n           </td>\r\n           <th></th>\r\n         </tr>\r\n"
+                },
+                {
+                    "date": 1622944817535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.gif')}}\"></div>\r\n+<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.gif')}}\"></div>\r\n <div>\r\n   <center>\r\n <form action=\"/addnewcmp\" method=\"POST\" enctype=\"multipart/form-data\">\r\n     <table class=\"table table-hover\">\r\n"
                 }
             ],
             "date": 1622929198259,

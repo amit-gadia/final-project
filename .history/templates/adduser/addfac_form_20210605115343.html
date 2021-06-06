@@ -1,0 +1,143 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script src="js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- jQuery -->
+      <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+  </script> 
+
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+  </script> 
+
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+  </script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+      <style>
+          .navcolor{
+              background: linear-gradient(90deg, #1575cf 5.13%, #00A9FC 77.11%);
+          }
+          .nav-link{
+              font-size: x-large;
+          }
+          .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #ffffffcf;
+        }
+        .loader img{
+            position: relative;
+            margin-left: 35%;
+            margin-top: 7.5%;
+        }
+		
+
+      </style>
+  </head>
+  <body>      
+<div class="loader" ><img width="350px" height="350px" src="{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}"></div>
+<div>
+  <center>
+<form action="/addnewrole" method="POST" enctype="multipart/form-data">
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <td></td>
+          <th scope="col">First Name</th>
+          <td scope="col"><input type="text" class="form-control" name="f_n" id="exampleInputPassword1" placeholder="First Name" ></td>
+          <th></th>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <th scope="col">Last Name</th>
+            <td scope="col"><input type="text" class="form-control" name="l_n" id="exampleInputPassword1" placeholder="Last Name" ></td>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <th scope="col">Date Of Birth</th>
+            <td scope="col"><input type="date" class="form-control" name="date" id="exampleInputPassword1" placeholder="Last Name" ></td>
+            <th></th>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <th scope="col">Qualification</th>
+            <td scope="col"><input type="text" class="form-control" name="Qualification" id="exampleInputPassword1" placeholder="Qualification" ></td>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <th scope="col">Salary</th>
+            <td scope="col"><input type="text" class="form-control" name="salary" id="exampleInputPassword1" placeholder="Salary" >
+              </td>
+              <th></th>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <th scope="col">Gender</th>
+            <td>
+              <input type="radio" id="customRadio1" name="customRadio" value="male">
+              Male &nbsp</input>
+              <input type="radio" id="customRadio2" name="customRadio" value="female">&nbspFemale &nbsp</input>
+            </td>
+              <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <th scope="col">Aadhar Number</th>
+            <td scope="col"><input type="number" class="form-control" name="aano" id="exampleInputPassword1" placeholder="Aadhar Number" ></td>
+            <th></th>
+          </tr>         
+          <tr>
+            <td></td>
+            <th scope="col">Blood Group</th>
+            <td scope="col"><select class="form-control" name="bg" id="exampleInputPassword1" placeholder="bg" >
+              <option value="ap">A+</option>
+              <option value="an">A-</option>  
+              <option value="bp">B+</option>  
+              <option value="bn">B-</option>  
+              <option value="abp">AB+</option>
+              <option value="abn">AB-</option>  
+              <option value="op">O+</option>  
+              <option value="on">O-</option>  
+              </select>
+            </td>
+              <th></th>
+          </tr>
+        <tr>
+          <td></td>
+          <th scope="row"></th>
+          
+    <input type="hidden" value="Faculty" name="role">
+          <td><input type="submit" class="btn btn-primary btn-lg"></td>
+          <th></th>
+        </tr>
+      </tbody>
+    </table>
+    </form>
+    </center>
+<script>
+    window.onload = function() 
+    {
+        //display loader on page load 
+        $('.loader').fadeOut();
+    }
+
+  $('#video_id').on('loadstart', function (event) {
+    $(this).addClass('loading');
+  });
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1622933920727,
@@ -36,6 +36,10 @@
                 {
                     "date": 1622937083433,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,11 @@\n </div>\r\n \r\n     <table class=\"table table-hover\">\r\n         <thead>\r\n+          <tr>\r\n+            \r\n+            </tr>\r\n           <tr class=\"navcolor\">\r\n             <th>Book Name</th>\r\n             <th>Book Author</th>\r\n             <th>Book Edition</th>\r\n"
+                },
+                {
+                    "date": 1622944304115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.gif')}}\"></a>\r\n+<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.gif')}}\"></a>\r\n </div>\r\n \r\n     <table class=\"table table-hover\">\r\n         <thead>\r\n"
                 }
             ],
             "date": 1622933920727,

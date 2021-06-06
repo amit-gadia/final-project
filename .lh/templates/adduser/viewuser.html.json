@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1622941307559,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622943317211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,17 +42,16 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-    <div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}\"></div>\r\n+    <div class=\"loader\"><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.gif')}}\"></div>\r\n     <table class=\"table table-hover\">\r\n         <thead>\r\n           <tr class=\"navcolor\">\r\n             <th>Name</th>\r\n             <th>User Id</th>\r\n             <th>Password</th>\r\n             <th>Role</th>\r\n-            <th></th>\r\n           </tr>\r\n         </thead>\r\n         <tbody>\r\n           {%for i in range(cblen)%}\r\n"
                 }
             ],
             "date": 1622941307559,

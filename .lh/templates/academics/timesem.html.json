@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1622912343942,
@@ -64,6 +64,10 @@
                 {
                     "date": 1622913265817,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n   <body>      \r\n <div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.png')}}\"></div>\r\n <div>\r\n   <center>\r\n-<form action=\"/Generate_ttt\" method=\"POST\" enctype=\"multipart/form-data\">\r\n+<form action=\"/Generate_tttt\" method=\"POST\" enctype=\"multipart/form-data\">\r\n     <table class=\"table table-hover\">\r\n       <tbody>\r\n         <tr>\r\n           <th >Select Sem</th>\r\n"
+                },
+                {
+                    "date": 1622943064740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.png')}}\"></div>\r\n+<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.gif')}}\"></div>\r\n <div>\r\n   <center>\r\n <form action=\"/Generate_tttt\" method=\"POST\" enctype=\"multipart/form-data\">\r\n     <table class=\"table table-hover\">\r\n"
                 }
             ],
             "date": 1622912343942,
