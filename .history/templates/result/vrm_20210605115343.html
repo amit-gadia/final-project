@@ -43,10 +43,17 @@
       </style>
   </head>
   <body>      
-<div class="loader" ><img width="350px" height="350px" src="{{url_for('static', filename='img/Poornima_University_Logo.png')}}"></div>
+<div class="loader" ><img width="350px" height="350px" src="{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}"></div>
 <div>
+  {{a}}
+  {%if b==True%}
+  <div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Result Added Successfully</strong>.
+  </div>
+  {%endif%}
   <center>
-    <form action="/vaddrmrs" method="POST" enctype="multipart/form-data">
+    <form action="/vrms" method="POST" enctype="multipart/form-data">
         <table class="table table-hover">
           <tbody>
             
@@ -54,26 +61,21 @@
             <tr>
                 <td></td>
                 <th scope="col">V Registration Number</th>
-                <th>
-                <input type="hidden" value="{{r}}" name="reggno">{{r}}</label>
-              </th>
+                <td scope="col"><input type="text" class="form-control" name="Registration_Number" id="exampleInputPassword1" placeholder="Registration Number" ></td>
+                <th></th>
               </tr>
+    
+              
               
             <tr>
               <td></td>
-              <th scope="col">Sem</th>
-              <th><input type="hidden" value="{{a}}" name="sem" >{{a}}</label></th>
-            </tr>
-            {%for i in range(lenb)%}
-            <tr>
-              <td></td>
-              <th>{{b[i]}}</th>
-              <th>{{c[i]}}</th>
+              <th scope="row"></th>
               
+        <input type="hidden" value="Accounts" name="role">
+              <td><input type="submit" class="btn btn-primary btn-lg"></td>
+              <th></th>
             </tr>
-            {%endfor%}
-            
-            
+          </tbody>
         </table>
         </form>
         </center>

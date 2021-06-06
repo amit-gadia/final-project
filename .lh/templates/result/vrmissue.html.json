@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1622936035350,
@@ -16,6 +16,10 @@
                 {
                     "date": 1622936107483,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n                 <td></td>\r\n                 <th scope=\"col\">V Registration Number</th>\r\n                 <td scope=\"col\"><input type=\"text\" class=\"form-control\" name=\"rno\" id=\"exampleInputPassword1\" placeholder=\"Registration Number\" ></td>\r\n                 <th></th>\r\n-                <input type=\"text\" value={{idd}} name=\"idd\">\r\n+                <input type=\"hidden\" value={{idd}} name=\"idd\">\r\n               </tr>\r\n     \r\n               \r\n               \r\n"
+                },
+                {
+                    "date": 1622939681524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n       </style>\r\n   </head>\r\n   <body>      \r\n-<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.png')}}\"></div>\r\n+<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_University_Logo.png')}}\"></div>\r\n <div>\r\n   {{a}}\r\n   {%if b==True%}\r\n   <div class=\"alert alert-dismissible alert-success\">\r\n"
                 }
             ],
             "date": 1622936035350,
