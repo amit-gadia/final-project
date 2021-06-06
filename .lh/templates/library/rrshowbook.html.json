@@ -1,0 +1,18 @@
+{
+    "sourceFile": "templates/library/rrshowbook.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1622937143834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1622937143834,
+            "name": "Commit-0",
+            "content": "<html>\r\n  <head>\r\n  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n      <link rel=\"stylesheet\" href=\"css/bootstrap.css\">\r\n      <script src=\"js/script.js\"></script>\r\n      <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\r\n      <!-- jQuery -->\r\n      <link rel=\"stylesheet\" href= \"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\"> \r\n\r\n  <script src= \"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"> \r\n  </script> \r\n\r\n  <script src= \"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"> \r\n  </script> \r\n\r\n  <script src= \"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"> \r\n  </script>  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\r\n      \r\n      <link href=\"https://fonts.googleapis.com/css2?family=Aladin&display=swap\" rel=\"stylesheet\">\r\n      <style>\r\n          .navcolor{\r\n              background: linear-gradient(90deg, #1575cf 5.13%, #00A9FC 77.11%);\r\n          }\r\n          .nav-link{\r\n              font-size: x-large;\r\n          }\r\n          .loader {\r\n            position: fixed;\r\n            left: 0px;\r\n            top: 0px;\r\n            width: 100%;\r\n            height: 100%;\r\n            z-index: 9999;\r\n            background-color: #ffffffcf;\r\n        }\r\n        .loader img{\r\n            position: relative;\r\n            margin-left: 35%;\r\n            margin-top: 7.5%;\r\n        }\r\n\t\t\r\n\r\n      </style>\r\n  </head>\r\n  <body>      \r\n<div class=\"loader\" ><img width=\"350px\" height=\"350px\" src=\"{{url_for('static', filename='img/Poornima_UniversityLogo.gif')}}\"></a>\r\n</div>\r\n\r\n    <table class=\"table table-hover\">\r\n        <thead>\r\n          <tr>\r\n            \r\n            </tr>\r\n          <tr class=\"navcolor\">\r\n            <th>Book Name</th>\r\n            <th>Book Author</th>\r\n            <th>Book Edition</th>\r\n            <th>Book Publisher</th>\r\n            <th>Book Stock</th>\r\n            <th>Issued Book</th>\r\n            <th>Book Code</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          {%for i in range(t)%}\r\n          <tr style=\"color:white;\" class=\"navcolor\">\r\n            <td>{{c[i][1]}}</th>\r\n            <td>{{c[i][2]}}</th>\r\n            <td>{{c[i][3]}}</td>\r\n            <td>{{c[i][4]}}</td>\r\n            <td>{{c[i][5]}}</th>\r\n            <td>{{c[i][6]}}</th>\r\n            <td>{{c[i][7]}}</td>\r\n            <td><a href=\"removebookk/{{c[i][0]}}\"><button></button></a></td>\r\n              \r\n        </tr>\r\n{%endfor%}\r\n          \r\n        </tbody>\r\n      </table>\r\n      <script>\r\n        window.onload = function() \r\n        {\r\n            //display loader on page load \r\n            $('.loader').fadeOut();\r\n        }\r\n    \r\n      $('#video_id').on('loadstart', function (event) {\r\n        $(this).addClass('loading');\r\n      });\r\n    </script>\r\n    </body>\r\n    </html>"
+        }
+    ]
+}

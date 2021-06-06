@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1622926168502,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1622939458893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             \r\n             \r\n             <tr>\r\n                 <td></td>\r\n-                <th scope=\"col\">Registration Number</th>\r\n+                <th scope=\"col\">Semester</th>\r\n                 <td scope=\"col\"><select class=\"form-control\" name=\"Registration_Number\" id=\"exampleInputPassword1\" placeholder=\"Registration Number\" >\r\n                 {%for i in range(a)%}\r\n                 <option value={{i+1}}>{{i+1}}</option>\r\n                 {%endfor%}  \r\n"
+                },
+                {
+                    "date": 1622939472453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             \r\n             \r\n             <tr>\r\n                 <td></td>\r\n-                <th scope=\"col\">Semester</th>\r\n+                <th scope=\"col\">Select Semester</th>\r\n                 <td scope=\"col\"><select class=\"form-control\" name=\"Registration_Number\" id=\"exampleInputPassword1\" placeholder=\"Registration Number\" >\r\n                 {%for i in range(a)%}\r\n                 <option value={{i+1}}>{{i+1}}</option>\r\n                 {%endfor%}  \r\n"
                 }
             ],
             "date": 1622926168502,
